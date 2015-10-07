@@ -1,0 +1,16 @@
+package Aug26;
+
+public class Utiltyfnteg {
+
+	
+	public static void main(String[] args) 
+	{
+		MyRandomNo();
+	}
+	public static void MyRandomNo()
+	{
+		double d=Math.random()*100;
+		int a=(int)d;
+		System.out.println(a);
+	}
+}

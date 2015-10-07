@@ -1,0 +1,17 @@
+package LOG4J;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+
+
+public class LoginusingLog4J {
+	private static Logger log=Logger.getLogger(LoginusingLog4J.class);
+	public static void main(String[] args) {
+		DOMConfigurator.configure("log4j.xml")
+		
+		
+		
+
+	}
+
+}

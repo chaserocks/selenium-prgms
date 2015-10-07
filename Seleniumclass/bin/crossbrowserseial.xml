@@ -1,0 +1,21 @@
+<!--Name of the test suite , can be anything    This is for serial -->
+
+<suite name="Grid Demo" parellel="tests">
+<!-- Name of the test as it should reflect in the html report, can be anything-->
+
+<test name="on Firefox">
+	<Parameter name="browser" value="firefox"/>
+    <classes>
+        <!--Exact name of the package and the class-->
+		<class name="SEGrid.DropdowntestingonGrid"/>
+		</classes>
+</test>
+
+<test name="on chrome">
+	<Parameter name="browser" value="chrome"/>
+    <classes>
+        <!--Exact name of the package and the class-->
+		<class name="SEGrid.DropdowntestingonGrid"/>
+		</classes>
+</test>
+</suite>

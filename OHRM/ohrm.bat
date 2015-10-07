@@ -1,0 +1,1 @@
+java -cp E:\Mystuff\MBC-23\QEDGE TECH\Selenium\MBC23\JarFiles-master\*;E:\Mystuff\SELINUMWS\OHRM\bin org.testng.TestNG E:\Mystuff\SELINUMWS\OHRM\OrangeHRM.xml

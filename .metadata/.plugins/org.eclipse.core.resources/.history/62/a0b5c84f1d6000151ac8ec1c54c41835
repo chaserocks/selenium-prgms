@@ -1,0 +1,25 @@
+package BatchTest;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class Launch {
+	FirefoxDriver driver;
+	@BeforeClass
+	public void launchApp(){
+		ProfilesIni pr=new ProfilesIni();
+		FirefoxProfile fp=pr.getProfile("MyMozillaff");
+		driver=new FirefoxDriver(fp);
+		driver.get("http://newtours.demoaut.com");
+	}
+	@AfterClass
+	public void closeApp(){
+		driver.quit();
+	}
+		
+}

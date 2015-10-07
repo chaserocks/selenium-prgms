@@ -1,0 +1,25 @@
+<suite name="OrangeHRM Test Suite"  parallel="tests">
+   <test name="OrangeHRM on Firefox" >
+    <parameter name="browser" value="firefox"  />
+    <classes>
+       <class name="com.orangehrm.TestSuite.Login" />
+        <class name="com.orangehrm.TestSuite.AddEmployee" />
+        <class name="com.orangehrm.TestSuite.Failure" />
+         <class name="com.orangehrm.TestSuite.TakeScreenshot" />
+          <class name="com.orangehrm.TestSuite.Logout" />
+    </classes>
+  </test>
+   <test name="OrangeHRM on Chrome" >
+     <parameter name="browser" value="chrome"  />
+    <classes>
+       <class name="com.orangehrm.TestSuite.Login" />
+       <class name="com.orangehrm.TestSuite.AddEmployee" />
+       <class name="com.orangehrm.TestSuite.Failure" />
+        <class name="com.orangehrm.TestSuite.TakeScreenshot" />
+          <class name="com.orangehrm.TestSuite.Logout" />
+    </classes>
+  </test>
+  
+  
+  
+</suite>

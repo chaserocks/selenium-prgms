@@ -1,0 +1,13 @@
+package TestSuite;
+
+import org.openqa.selenium.remote.RemoteWebDriver;
+import com.orangehrm.utility.ExcelOperations;
+import com.orangehrm.utility.Screenshot;
+
+public class Constants {
+	ExcelOperations eo=new ExcelOperations();
+	String path1="E:\\Mystuff\\SELINUMWS\\OrangeHRM\\src\\ExcelFiles\\EmployeeList.xlsx";
+	String path2="E:\\Mystuff\\SELINUMWS\\OrangeHRM\\src\\DataEngine\\DataEngine.xlsx";
+	static RemoteWebDriver driver=null;
+	ScreenShot screen=new ScreenShot();
+}

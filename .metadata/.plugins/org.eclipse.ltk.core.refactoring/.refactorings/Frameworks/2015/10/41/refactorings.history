@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;FW.loginbr&apos; to &apos;LoginusingKeywords&apos;&#x0D;&#x0A;- Original project: &apos;Frameworks&apos;&#x0D;&#x0A;- Original element: &apos;FW.loginbr&apos;&#x0D;&#x0A;- Renamed element: &apos;FW.LoginusingKeywords&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;loginbr&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;FW{loginbr.java[loginbr" matchStrategy="1" name="LoginusingKeywords" qualified="false" references="true" similarDeclarations="false" stamp="1444042976335" textual="false" version="1.0"/>
+</session>

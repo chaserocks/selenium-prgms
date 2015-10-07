@@ -1,0 +1,21 @@
+// Prgm to open amazon and select books from the dropdownlist and search for a book in search box.
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni;
+
+public class drpdwn1 {
+	public static void main(String[] args) {
+		ProfilesIni pr=new ProfilesIni();
+		FirefoxProfile fp=pr.getProfile("MyMozillaff");
+		FirefoxDriver driver=new FirefoxDriver(fp);
+		driver.get("http://google.com");
+        //id of the dropdown box
+		driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
+		//id of the search box
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Chetan Bagh");
+		// class of the search button
+		driver.findElement(By.className("nav-input")).click();
+	}
+
+}

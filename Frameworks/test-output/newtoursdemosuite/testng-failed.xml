@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [newtoursdemosuite]">
+  <test name="Login on newtours app(failed)">
+    <classes>
+      <class name="BatchTest.Links">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- BatchTest.Links -->
+      <class name="BatchTest.Login">
+        <methods>
+          <include name="launchApp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- BatchTest.Login -->
+    </classes>
+  </test> <!-- Login on newtours app(failed) -->
+  <test name="Links on newtours app(failed)">
+    <classes>
+      <class name="BatchTest.Links">
+        <methods>
+          <include name="launchApp"/>
+          <include name="linksTest"/>
+        </methods>
+      </class> <!-- BatchTest.Links -->
+      <class name="BatchTest.Login">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- BatchTest.Login -->
+    </classes>
+  </test> <!-- Links on newtours app(failed) -->
+</suite> <!-- Failed suite [newtoursdemosuite] -->

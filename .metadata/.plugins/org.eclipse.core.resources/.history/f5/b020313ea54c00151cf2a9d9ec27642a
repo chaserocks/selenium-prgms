@@ -1,0 +1,45 @@
+package JavaPrgms;
+
+import JavaPrgms.StaticNnstatic.car;
+
+public class StaticNnstatic {
+	
+	public static class car{
+		int Price;
+		String Model;
+		static int Wheels;
+		public static void start(){
+			System.out.println("This is to start the car");
+		}
+	public void accelerate ()
+	{
+		System.out.println("Car acceleration defined");
+	}
+	public static void main(String[] args) {
+		{
+			car c1=new car();
+			c1.Price=9999999;
+			c1.Model="audi";
+			c1.Wheels=4;
+			
+			car c2=new car();
+			c2.Price=999999;
+			c2.Model="BMW";
+			c2.Wheels=4;
+			
+			car c3=new car();
+			c3.Price=999999999;
+			c3.Model="R.R";
+			c3.Wheels=8;
+			
+			c1=c2;//c1 starts pointing to the memory location of c2 & the data present in the original memory location of c1 is lost.
+			c2=c3;//c2 starts pointing to the memory location of c3 & the data present in the original memory location of c2 is nt lost as c1 is still pointing to it.
+		System.out.println(c2.Model);
+		System.out.println(c3.Model);
+		}
+		
+
+	}
+	}
+
+}

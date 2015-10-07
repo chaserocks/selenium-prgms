@@ -1,0 +1,19 @@
+<!--Name of the test suite , can be anything-->
+
+<suite name="newtoursdemosuite">
+<!-- Name of the test as it should reflect in the html report, can be anything-->
+
+<test name="Login on newtours app">
+    <classes>
+        <!--Exact name of the package and the class-->
+		<class name="BatchTest.Login"/>
+		</classes>
+</test>
+
+<test name="Links on newtours app">
+    <classes>
+        <!--Exact name of the package and the class-->
+		<class name="BatchTest.Links"/>
+		</classes>
+</test>
+</suite>

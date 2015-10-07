@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Test suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="On firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.ohrm.testsuite.Logout">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Logout -->
+      <class name="com.ohrm.testsuite.TakingScreenshot">
+        <methods>
+          <include name="takieScrrenshot"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.TakingScreenshot -->
+      <class name="com.ohrm.testsuite.Login">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Login -->
+      <class name="com.ohrm.testsuite.Failure">
+        <methods>
+          <include name="failTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Failure -->
+      <class name="com.ohrm.testsuite.AddEmployee">
+        <methods>
+          <include name="addEmployeeTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.AddEmployee -->
+    </classes>
+  </test> <!-- On firefox(failed) -->
+  <test name="On Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ohrm.testsuite.Logout">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Logout -->
+      <class name="com.ohrm.testsuite.TakingScreenshot">
+        <methods>
+          <include name="takieScrrenshot"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.TakingScreenshot -->
+      <class name="com.ohrm.testsuite.Login">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Login -->
+      <class name="com.ohrm.testsuite.Failure">
+        <methods>
+          <include name="failTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.Failure -->
+      <class name="com.ohrm.testsuite.AddEmployee">
+        <methods>
+          <include name="addEmployeeTest"/>
+        </methods>
+      </class> <!-- com.ohrm.testsuite.AddEmployee -->
+    </classes>
+  </test> <!-- On Chrome(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Test suite] -->
